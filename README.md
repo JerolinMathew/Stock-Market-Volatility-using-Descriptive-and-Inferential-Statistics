@@ -1,162 +1,148 @@
-📊 Stock Market Volatility Analysis & Prediction
-📌 Project Overview
+# 📊 Stock Market Volatility Analysis & Prediction
 
-This project focuses on analyzing and predicting stock market volatility using historical stock price data. The dataset includes daily trading information such as Open, High, Low, Close prices, and Volume.
+## 📌 Project Overview
 
-The project performs:
+This project focuses on analyzing and predicting stock market volatility using historical stock price data. The dataset consists of daily trading information including Open, High, Low, Close prices, and Volume.
 
-Exploratory Data Analysis (EDA)
+The application performs statistical analysis, correlation studies, time series visualization, and machine learning-based volatility prediction using Streamlit.
 
-Correlation Analysis
+---
 
-Time Series Visualization
+## 🎯 Objectives
 
-Statistical Testing
+- Analyze relationships among stock price variables.
+- Generate correlation heatmaps for numerical variables.
+- Create time series plots to identify trends and fluctuations.
+- Compute rolling volatility and moving averages.
+- Build and compare machine learning models for volatility prediction.
 
-Machine Learning-based Volatility Prediction
+---
 
-The application is built using Streamlit for interactive visualization and model evaluation.
+## 🗂 Dataset Description
 
-Objectives
+The dataset contains the following variables:
 
-Analyze relationships between stock price variables.
+- **Date** – Trading date  
+- **Open** – Opening price  
+- **High** – Highest price of the day  
+- **Low** – Lowest price of the day  
+- **Close** – Closing price  
+- **Volume** – Number of shares traded  
 
-Identify trends, seasonal patterns, and irregular fluctuations.
+---
 
-Compute rolling volatility using statistical techniques.
+## ⚙️ Methodology
 
-Build and compare machine learning models for volatility prediction.
+### 1️⃣ Data Preprocessing
+- Removal of duplicate values  
+- Handling missing values  
+- Conversion of Date column to datetime format  
+- Sorting dataset chronologically  
 
-Visualize insights using interactive charts.
+### 2️⃣ Feature Engineering
+- Daily Returns calculation  
+- 20-Day Rolling Volatility  
+- 20-Day Moving Average (MA20)  
+- Lag variables (Lag1, Lag2)  
 
-Dataset Description
+### 3️⃣ Statistical Analysis
+- Descriptive statistics  
+- Skewness and kurtosis  
+- One-sample t-test on returns  
 
-The dataset contains historical stock data with the following columns:
+### 4️⃣ Machine Learning Models
+- Linear Regression  
+- Random Forest Regressor  
 
-Date – Trading date
+### 5️⃣ Evaluation Metrics
+- Root Mean Squared Error (RMSE)  
+- R² Score  
 
-Open – Opening price
+---
 
-High – Highest price of the day
+## 📈 Visualizations
 
-Low – Lowest price of the day
+- Closing Price over Time  
+- Daily Returns Plot  
+- Rolling Volatility Plot  
+- Correlation Heatmap  
+- Return Distribution Histogram  
+- Boxplot of Returns  
+- Model Predictions vs Actual Volatility  
 
-Close – Closing price
+---
 
-Volume – Number of shares traded
+## 🛠 Technologies Used
 
-⚙️ Features Implemented
-🔹 Data Preprocessing
+- Python  
+- Streamlit  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- SciPy  
+- Scikit-learn  
 
-Duplicate removal
+---
 
-Missing value handling
+## 🚀 How to Run the Project
 
-Date conversion and sorting
+### Step 1: Clone the Repository
 
-Forward and backward filling
-
-🔹 Feature Engineering
-
-Daily Returns
-
-20-Day Rolling Volatility
-
-20-Day Moving Average (MA20)
-
-Lag Variables (Lag1, Lag2)
-
-🔹 Statistical Analysis
-
-Descriptive statistics (mean, standard deviation, skewness, kurtosis)
-
-One-sample t-test for returns
-
-🔹 Machine Learning Models
-
-Linear Regression
-
-Random Forest Regressor
-
-🔹 Evaluation Metrics
-
-RMSE (Root Mean Squared Error)
-
-R² Score
-
-🔹 Visualizations
-
-Closing Price Over Time
-
-Daily Returns Plot
-
-Rolling Volatility Plot
-
-Return Distribution Histogram
-
-Boxplot of Returns
-
-Model Predictions vs Actual Volatility
-
-Technologies Used
-
-Python
-
-Streamlit
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-SciPy
-
-Scikit-learn
-
-How to Run the Project
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/repository-name.git
 cd repository-name
-2️⃣ Create Virtual Environment (Recommended)
+```
+
+### Step 2: Create Virtual Environment (Recommended)
+
+```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
-3️⃣ Install Dependencies
+venv\Scripts\activate   # For Windows
+```
+
+### Step 3: Install Required Libraries
+
+```bash
 pip install -r requirements.txt
+```
 
-If requirements.txt is not available:
+If `requirements.txt` is not available:
 
+```bash
 pip install streamlit pandas numpy matplotlib seaborn scipy scikit-learn
-4️⃣ Run the Application
+```
+
+### Step 4: Run the Application
+
+```bash
 streamlit run app.py
-Key Insights
+```
 
-Strong positive correlation among Open, High, Low, and Close prices.
+---
 
-Moderate negative correlation between Volume and price variables.
+## 🔍 Key Findings
 
-Clear long-term upward trend in stock prices.
+- Strong positive correlation among Open, High, Low, and Close prices.
+- Moderate negative correlation between Volume and price variables.
+- Clear long-term upward trend in stock prices.
+- No strong seasonal pattern observed in daily data.
+- Presence of short-term irregular fluctuations.
+- Random Forest performs better than Linear Regression in predicting volatility.
 
-No strong visible seasonal pattern.
+---
 
-Presence of short-term irregular fluctuations due to market volatility.
+## 🔮 Future Enhancements
 
-Random Forest model performs better than Linear Regression in volatility prediction.
+- Implementation of ARIMA or LSTM models.
+- Real-time stock data integration.
+- Deployment using Streamlit Cloud.
+- Hyperparameter tuning for improved prediction accuracy.
 
-Future Improvements
+---
 
-Implement ARIMA or LSTM for advanced time-series forecasting.
+## 👨‍💻 Author
 
-Add real-time stock data integration.
-
-Deploy application on cloud (Streamlit Cloud / Heroku).
-
-Include hyperparameter tuning for model optimization.
-
-👨‍💻 Author
-
-Your Name
-B.Tech – Computer Science (Data Science)
+**Your Name**  
+B.Tech – Computer Science (Data Science)  
 Christ University
