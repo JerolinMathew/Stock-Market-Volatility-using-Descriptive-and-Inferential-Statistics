@@ -143,6 +143,6 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-**Your Name**  
+Jerolin Mathew
 B.Tech – Computer Science (Data Science)  
 Christ University
